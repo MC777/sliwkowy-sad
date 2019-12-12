@@ -1,40 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <meta property="og:title" content="Gościniec: Śliwkowy Sad - Noclegi w Gniewoszowie" />
+  <meta property="og:description" content="Gościniec: Śliwkowy Sad - Noclegi w Gniewoszowie" />
+  <meta property="og:url" content="www.sliwkowy-sad.pl" />
+  <meta property="og:image" content="assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="icon" type="image/png" href="assets/img/bg.jpg" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+<body>
 
-    <script src="js/main.js"></script>
-  </body>
+  <header class="header">
+    <nav class="navigation">
+      <img class="navigation-logo" src="assets/img/cover.png">
+      <ul class="navigation__list">
+        <li><a href="#main">Strona głowna</a></li>
+        <li><a href="#price">Cennik</a></li>
+        <li><a href="#attractions">Atrakcje</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="slides" style="max-height:450px">
+    <img class="mySlides" src="assets/img/1.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/3.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/4.jpg" style="width:100%">
+  </div>
+
+  <main id="main" class="main">
+
+    <section id="price" class="price">
+      <h2 class="price__title">Cennik</h2>
+    </section>
+    <section id="attractions" class="attractions">
+      <h2 class="attractions__title">Atrakcje</h2>
+    </section>
+    <section id="gallery" class="gallery">
+      <h2 class="gallery__title">Galeria</h2>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="contact__title">Kontakt</h2>
+      <div class="contact__box">
+        <div class="contact__box-data">
+          <ul class="contact__box-data-list">
+            <li class="contact__box-data-list-item">
+              <span style="margin-right: 10px;"><i class="fusion-li-icon fa-home fas" style="color:#717171;"></i></span>
+              <p>Gniewoszów 16, 57-530 Międzykesie</p>
+            </li>
+            <li class="contact__box-data-list-item">
+              <span style="margin-right: 10px;"><i class="fusion-li-icon fa-phone fas"
+                  style="color:#717171;"></i></span>
+              <p><a href="tel:+48668154674">+48 668 154 674</a></p>
+            </li>
+            <li class="contact__box-data-list-item">
+              <span style="margin-right: 10px;"><i class="fusion-li-icon fa-envelope far"
+                  style="color:#717171;"></i></span>
+              <p><a href="mailto:kontakt@sliwkowy-sad.pl">kontakt@sliwkowy-sad.pl</a></p>
+            </li>
+            <li class="contact__box-data-list-item">
+              <p>Marta Biel<br>
+                Bank PEKAO SA<br>
+                11 1240 1111 1111 1111 2222 1111</p>
+            </li>
+          </ul>
+
+        </div>
+        <div class="contact__box-direction">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163251.0865186991!2d16.525683752387156!3d50.25835267236259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e07c4af1629bb%3A0x797e94ae16f5358c!2zR2_Fm2NpbmllYzogxZpsaXdrb3d5IFNhZA!5e0!3m2!1spl!2spl!4v1576073544644!5m2!1spl!2spl"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <p class="footer__text">
+      © Copyright 2020 - All Rights Reserved
+    </p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
 </html>

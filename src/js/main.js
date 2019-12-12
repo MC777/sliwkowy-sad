@@ -1,22 +1,18 @@
 "use strict";
 
-// service worker registration - remove if you're not going to use it
+var myIndex = 0;
+carousel();
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
+function carousel() {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	myIndex++;
+	if (myIndex > x.length) {
+		myIndex = 1;
+	}
+	x[myIndex - 1].style.display = "block";
+	setTimeout(carousel, 4000); // Change image every 2 seconds
 }
-
-// place your code below
-
-
-console.log(`Hello world!`);
-
-
