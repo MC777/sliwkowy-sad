@@ -4,7 +4,7 @@
 @import "modules/contact.scss";
 @import "modules/gallery.scss";
 @import "modules/price.scss";
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext");
 
 html {
 	box-sizing: border-box;
@@ -24,7 +24,7 @@ html {
 body {
 	color: $dark-purple;
 	overflow-x: hidden;
-	font-family: 'Lato', sans-serif;
+	font-family: "Lato", sans-serif;
 }
 
 .header {
@@ -53,12 +53,12 @@ body {
 	font-size: 1.5rem;
 	white-space: nowrap;
 	@media (max-width: $mobile) {
-	font-size: 1rem;
+		font-size: 1rem;
 	}
 	&__list {
 		display: flex;
 		align-items: center;
-	
+
 		&-toggle {
 			display: flex;
 			align-items: center;
@@ -70,13 +70,12 @@ body {
 				display: block;
 			}
 		}
-		
 	}
-	
+
 	& ul {
 		@media (max-width: $mobile) {
-		width: 100%;
-		display: none;	
+			width: 100%;
+			display: none;
 		}
 	}
 	& .toggleClass {
@@ -98,7 +97,7 @@ body {
 	& a {
 		@media (max-width: $mobile) {
 			margin-top: 40px;
-		
+
 			&:hover::before,
 			&:hover::after {
 				display: none;
