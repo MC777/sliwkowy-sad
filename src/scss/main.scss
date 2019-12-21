@@ -58,7 +58,6 @@ body {
 	&__list {
 		display: flex;
 		align-items: center;
-
 		&-toggle {
 			display: flex;
 			align-items: center;
@@ -80,7 +79,8 @@ body {
 	}
 	& .toggleClass {
 		@media (max-width: $mobile) {
-			margin-top: 40px;
+			margin-top: 0px;
+			padding-top: 40px;
 			display: block;
 		}
 	}
@@ -153,6 +153,16 @@ body {
 		@media (max-width: $mobile) {
 			display: flex;
 			align-items: center;
+			height: 40px;
+		}
+	}
+	&-text {
+		display: none;
+		padding: 0 16px;
+		@media (max-width: $mobile) {
+			display: block;
+			align-items: center;
+			z-index: 3;
 			height: 40px;
 		}
 	}
