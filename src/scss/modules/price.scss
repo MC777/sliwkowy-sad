@@ -1,12 +1,13 @@
 .price {
 	padding: 8rem 0 0;
+
 	&__title {
 		font-size: 2.25rem;
 		margin: 0;
 		font-style: normal;
 		font-weight: 600;
 		padding: 1rem 0;
-		border-bottom: 2px solid #16be86;
+		border-bottom: 1px solid $lochinvar;
 	}
 	&__table {
 		margin-top: 8rem;
@@ -14,16 +15,19 @@
 		font-size: 1.5rem;
 		border-collapse: collapse;
 		width: 100%;
+		@media (max-width: $mobile) {
+			font-size: 1rem;
+			}
 	} & td, & th {
 		border: 1px solid #ddd;
 		padding: 8px;
 		text-align: center;
 	} & tr:hover {
-		background-color: #abe2d0;
+		background-color: $light-lochinvar;
 	} & th {
 		padding-top: 12px;
 		padding-bottom: 12px;
-		background-color: $big-stone;
+		background-color: $lochinvar;
 		color: white;
 	}
 }

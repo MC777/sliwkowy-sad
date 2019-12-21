@@ -14,8 +14,17 @@ function carousel() {
 		myIndex = 1;
 	}
 	x[myIndex - 1].style.display = "block";
-	setTimeout(carousel, 4000); // Change image every 2 seconds
+	setTimeout(carousel, 4000); // Change image every 4 seconds
 }
+
+document.getElementById('myTopnav').addEventListener('click', event => {
+	let menu = document.querySelector(".navigation__list");
+	menu.classList.toggle("toggleClass");
+});
+
+document.getElementById('navigation__list').addEventListener('click', event => {
+	document.getElementById("navigation__list").classList.remove("toggleClass");
+});
 
 /*!
  * jQuery JavaScript Library v3.4.1

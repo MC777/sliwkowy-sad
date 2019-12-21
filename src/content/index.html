@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Site title</title>
+  <title>Gościniec - Śliwkowy Sad</title>
   <meta name="description" content="Description" />
 
   <meta property="og:title" content="Gościniec: Śliwkowy Sad - Noclegi w Gniewoszowie" />
@@ -13,7 +13,7 @@
   <meta property="og:url" content="www.sliwkowy-sad.pl" />
   <meta property="og:image" content="assets/images/cover.png" />
 
-  <link rel="icon" type="image/png" href="assets/images/bg.jpg" />
+  <link rel="icon" type="image/png" href="assets/images/icon.png" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
@@ -22,21 +22,30 @@
 
   <header class="header">
     <nav class="navigation">
-      <img class="navigation-logo" src="assets/images/cover.png">
-      <ul class="navigation__list">
+
+      <img class="navigation-logo" src="assets/images/LOGOTYP_transparent.svg">
+      <img class="navigation-logo-mobile" src="assets/images/icon.png" media="(min-width: 767px)">
+      <ul class="navigation__list" id="navigation__list" >
         <li><a href="#main">Strona głowna</a></li>
         <li><a href="#price">Cennik</a></li>
         <li><a href="#attractions">Atrakcje</a></li>
         <li><a href="#gallery">Galeria</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
+      <div class="navigation__list-toggle" id="myTopnav">
+        <i class="fas fa-bars menu"></i>
+      </div>
+      </div>
     </nav>
   </header>
 
-  <div id="main" class="slides" style="max-height:450px">
-    <img class="mySlides" src="assets/images/1.jpg" style="width:100%">
-    <img class="mySlides" src="assets/images/3.jpg" style="width:100%">
-    <img class="mySlides" src="assets/images/4.jpg" style="width:100%">
+  <div id="main" class="slides" style="max-height:450px" style="max-width: 1216px">
+    <img class="mySlides" src="assets/images/s1.jpg" style="max-width: 1216px">
+    <img class="mySlides" src="assets/images/s2.jpg" style="max-width: 1216px">
+    <img class="mySlides" src="assets/images/s3.jpg" style="max-width: 1216px">
+    <img class="mySlides" src="assets/images/s4.jpg" style="max-width: 1216px">
+    <img class="mySlides" src="assets/images/s5.jpg" style="max-width: 1216px">
+    <img class="mySlides" src="assets/images/s6.jpg" style="max-width: 1216px">
   </div>
 
   <main class="main">
@@ -75,18 +84,102 @@
           <td>50zł / os</td>
           <td>100zł / dzień</td>
         </tr>
-        
+
       </table>
     </section>
     <section id="attractions" class="attractions">
       <h2 class="attractions__title">Atrakcje</h2>
+      <p>Nasz Gościniec znajduje się w miejscowości Gniewoszów położonej na wysokości 625 m n.p.m. To idealna miejsce
+        wypadowe na górskie wycieczki i do zwiedzania okolicznych atrakcji (ruiny zamku Szczerba, grota solna). W zimie
+        miejsce to przyciąga miłośników narciarstwa. Czarna Góra i Zieleniec oddalone są od Gniewoszowa o około 25 km.
+        Gościniec posiada salę o powierzchni 65m2, gdzie co tydzień odbywają się zajęcia jogi. Organizujemy również
+        szkolenia, treningi, wieczory integracyjne i filmowe.
+        Mówimy po polsku, niemiecku, angielsku i rosyjsku.</p>
     </section>
     <section id="gallery" class="gallery">
       <h2 class="gallery__title">Galeria</h2>
-      <a href="assets/images/1.jpg" data-lightbox="mygallery" data-title="sample 1"><img src="assets/images/1.jpg"></a>
-      <a href="assets/images/2.jpg" data-lightbox="mygallery"><img src="assets/images/2.jpg"></a>
-      <a href="assets/images/3.jpg" data-lightbox="mygallery"><img src="assets/images/3.jpg"></a>
-      <a href="assets/images/4.jpg" data-lightbox="mygallery"><img src="assets/images/4.jpg"></a>
+      <div class="gallery__container">
+        <a href="assets/images/g1.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g1.jpg"></a>
+        <a href="assets/images/g2.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g2.jpg"></a>
+        <a href="assets/images/g3.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g3.jpg"></a>
+        <a href="assets/images/g4.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g4.jpg"></a>
+        <a href="assets/images/g5.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g5.jpg"></a>
+        <a href="assets/images/g6.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g6.jpg"></a>
+        <a href="assets/images/g7.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g7.jpg"></a>
+        <a href="assets/images/g8.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g8.jpg"></a>
+        <a href="assets/images/g9.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g9.jpg"></a>
+        <a href="assets/images/g10.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g10.jpg"></a>
+        <a href="assets/images/g11.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g11.jpg"></a>
+        <a href="assets/images/g12.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g12.jpg"></a>
+        <a href="assets/images/g13.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g13.jpg"></a>
+        <a href="assets/images/g14.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g14.jpg"></a>
+        <a href="assets/images/g15.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g15.jpg"></a>
+        <a href="assets/images/g16.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g16.jpg"></a>
+        <a href="assets/images/g17.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g17.jpg"></a>
+        <a href="assets/images/g18.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g18.jpg"></a>
+        <a href="assets/images/g19.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g19.jpg"></a>
+        <a href="assets/images/g20.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g20.jpg"></a>
+        <a href="assets/images/g21.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g21.jpg"></a>
+        <a href="assets/images/g22.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g22.jpg"></a>
+        <a href="assets/images/g23.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g23.jpg"></a>
+        <a href="assets/images/g24.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g24.jpg"></a>
+        <a href="assets/images/g25.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g25.jpg"></a>
+        <a href="assets/images/g26.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g26.jpg"></a>
+        <a href="assets/images/g27.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g27.jpg"></a>
+        <a href="assets/images/g28.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g28.jpg"></a>
+        <a href="assets/images/g29.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g29.jpg"></a>
+        <a href="assets/images/g30.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g30.jpg"></a>
+        <a href="assets/images/g31.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g31.jpg"></a>
+        <a href="assets/images/g32.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g32.jpg"></a>
+        <a href="assets/images/g33.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g33.jpg"></a>
+        <a href="assets/images/g34.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g34.jpg"></a>
+        <a href="assets/images/g35.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g35.jpg"></a>
+        <a href="assets/images/g36.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g36.jpg"></a>
+        <a href="assets/images/g37.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g37.jpg"></a>
+        <a href="assets/images/g38.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g38.jpg"></a>
+        <a href="assets/images/g39.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g39.jpg"></a>
+        <a href="assets/images/g40.jpg" data-lightbox="mygallery" data-title="sample 1"><img
+            src="assets/images/g40.jpg"></a>
+      </div>
     </section>
     <section id="contact" class="contact">
       <h2 class="contact__title">Kontakt</h2>
@@ -98,23 +191,28 @@
               <p>Gniewoszów 16, 57-530 Międzykesie</p>
             </li>
             <li class="contact__box-data-list-item">
-              <span style="margin-right: 10px;"><i class="fusion-li-icon fa-phone fas" style="color:#717171;"></i></span>
+              <span style="margin-right: 10px;"><i class="fusion-li-icon fa-phone fas"
+                  style="color:#717171;"></i></span>
               <p><a href="tel:+48668154674">+48 668 154 674</a></p>
             </li>
             <li class="contact__box-data-list-item">
-              <span style="margin-right: 10px;"><i class="fusion-li-icon fa-envelope far" style="color:#717171;"></i></span>
+              <span style="margin-right: 10px;"><i class="fusion-li-icon fa-envelope far"
+                  style="color:#717171;"></i></span>
               <p><a href="mailto:kontakt@sliwkowy-sad.pl">kontakt@sliwkowy-sad.pl</a></p>
             </li>
             <li class="contact__box-data-list-item">
-              <span style="margin-right: 17px;"><i class="fusion-li-icon fa-angle-right fas" style="color:#717171;"></i></span>
+              <span style="margin-right: 17px;"><i class="fusion-li-icon fa-angle-right fas"
+                  style="color:#717171;"></i></span>
               <p>Marta Biel</p>
             </li>
             <li class="contact__box-data-list-item">
-              <span style="margin-right: 17px;"><i class="fusion-li-icon fa-angle-right fas" style="color:#717171;"></i></span>
+              <span style="margin-right: 17px;"><i class="fusion-li-icon fa-angle-right fas"
+                  style="color:#717171;"></i></span>
               <p>Bank PEKAO SA</p>
             </li>
             <li class="contact__box-data-list-item">
-              <span style="margin-right: 17px;"><i class="fusion-li-icon fa-angle-right fas" style="color:#717171;"></i></span>
+              <span style="margin-right: 17px;"><i class="fusion-li-icon fa-angle-right fas"
+                  style="color:#717171;"></i></span>
               <p>11 1240 1111 1111 1111 2222 1111</p>
             </li>
           </ul>
