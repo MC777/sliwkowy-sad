@@ -8,10 +8,10 @@
 
 html {
 	box-sizing: border-box;
-	font-size: 10px;
+	font-size: 13px;
 	scroll-behavior: smooth;
 	@media (max-width: $mobile) {
-		font-size: 12px;
+		font-size: 1.25rem;
 	}
 }
 
@@ -28,9 +28,8 @@ body {
 }
 
 .header {
-	//display: flex;
-	//justify-content: center;
 	position: fixed;
+	z-index: 1000;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -46,6 +45,7 @@ body {
 .navigation {
 	max-width: 1216px;
 	padding: 4px 16px;
+	position: relative;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
@@ -169,11 +169,18 @@ body {
 }
 
 .slides {
-	padding-top: 100px;
-	display: flex;
-	justify-content: center;
-	@media (max-width: $mobile) {
-		width: 300px;
+	margin: 0;
+	padding-top: 80px;
+	overflow: hidden;
+	&__container img {
+		
+		width: 20%;
+		height: 500px;
+	}
+	&__container {
+		position: relative;
+		width: 500%;
+		animation: slide 10s alternate;
 	}
 }
 
@@ -188,7 +195,7 @@ body {
 		margin: 0;
 		max-width: 1245px;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;	
+		grid-template-columns: 1fr 1fr 1fr;
 		&-center {
 			white-space: nowrap;
 			&-text {
@@ -204,7 +211,7 @@ body {
 			font-size: 2rem;
 			& a {
 				color: #4080ff;
-				&:hover{
+				&:hover {
 					color: whitesmoke;
 				}
 			}
@@ -216,7 +223,7 @@ body {
 	width: 100%;
 	text-align: center;
 	padding-top: 16px;
-	padding-bottom: 16px;	
+	padding-bottom: 16px;
 }
 
 @keyframes slideIn {
@@ -366,7 +373,7 @@ body.lb-disable-scrolling {
 	line-height: 1.1em;
 }
 .lb-data .lb-caption {
-	font-size: 13px;
+	font-size: 1px;
 	font-weight: 700;
 	line-height: 1em;
 }
