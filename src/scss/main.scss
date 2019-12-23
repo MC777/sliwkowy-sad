@@ -50,7 +50,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	text-transform: uppercase;
-	font-size: 1.5rem;
+	font-size: 14px;
 	white-space: nowrap;
 	@media (max-width: $mobile) {
 		font-size: 1rem;
@@ -143,7 +143,6 @@ body {
 	animation: slideIn 0.5s forwards;
 	display: flex;
 	justify-content: center;
-	//vertical-align: top;
 	margin-right: 20px;
 	@media (max-width: $mobile) {
 		display: none;
@@ -173,7 +172,6 @@ body {
 	padding-top: 80px;
 	overflow: hidden;
 	&__container img {
-		
 		width: 20%;
 		height: 500px;
 	}
@@ -186,11 +184,15 @@ body {
 
 .footer {
 	width: 100%;
-	background-color: #2e2e2e;
+	background-color: #d3d4d4be;
 	display: flex;
 	justify-content: space-evenly;
 	padding: 4px 16px;
 	&__container {
+		@media (max-width: $mobile) {
+			display: block;
+			font-size: 12px;
+		}
 		width: 100%;
 		margin: 0;
 		max-width: 1245px;
@@ -201,10 +203,15 @@ body {
 			&-text {
 				display: flex;
 				justify-content: center;
-				color: whitesmoke;
+				color: black;
 			}
 		}
 		&-right {
+			@media (max-width: $mobile) {
+				display: flex;
+				justify-content: center;
+				padding: 16px;
+			}
 			padding: 0 20px;
 			display: flex;
 			align-items: center;
@@ -212,18 +219,21 @@ body {
 			& a {
 				color: #4080ff;
 				&:hover {
-					color: whitesmoke;
+					color: $dark-purple;
 				}
 			}
 		}
+		&-left {
+			@media (max-width: $mobile) {
+				padding: 16px;
+				display: flex;
+				justify-content: center;
+			}
+			align-items: center;
+			display: flex;
+			color: whitesmoke;
+		}
 	}
-}
-
-.fb-like {
-	width: 100%;
-	text-align: center;
-	padding-top: 16px;
-	padding-bottom: 16px;
 }
 
 @keyframes slideIn {
