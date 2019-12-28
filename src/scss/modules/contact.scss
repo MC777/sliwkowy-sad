@@ -1,5 +1,4 @@
 .contact {
-	padding: 8rem 0 0;
 	&__title {
 		font-size: 1.25rem;
 		margin: 0;
@@ -12,8 +11,8 @@
 		font-size: 1.25em;
 		display: grid;
 		grid-template-columns: 0.5fr 1fr;
-		padding-top: 8rem;
-		padding-bottom: 8rem;
+		padding-top: 80px;
+		padding-bottom: 80px;
 		@media (max-width: $mobile) {
 			grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 		}
@@ -25,12 +24,11 @@
 			&-list {
 				padding-left: 0;
 				&-item {
-					
 					display: flex;
 					align-items: center;
 					text-align: left;
 					& a {
-						color: $violet;	
+						color: $violet;
 						text-decoration: none;
 					}
 					& p {

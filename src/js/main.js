@@ -18,7 +18,7 @@ function carousel() {
 }
 
 document.getElementById('myTopnav').addEventListener('click', event => {
-	let menu = document.querySelector(".navigation__list");
+	let menu = document.querySelector(".navigation__container-list");
 	menu.classList.toggle("toggleClass");
 });
 

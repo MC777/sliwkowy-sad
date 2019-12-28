@@ -1,5 +1,5 @@
 .attractions {
-	padding: 8rem 0 0;
+	padding-top: 80px;
 	&__title {
 		font-size: 1.25rem;
 		margin: 0;
@@ -8,8 +8,11 @@
 		padding: 1rem 0;
 		border-bottom: 1px solid $lochinvar;
 	}
-	&__description{
+	&__description {
 		font-size: 1.25rem;
 		text-align: center;
+		&-first {
+			padding-top: 60px;
+		}
 	}
 }
