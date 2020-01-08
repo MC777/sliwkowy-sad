@@ -337,8 +337,8 @@ template {
   font-size: 1.25em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 0.5fr;
+  grid-template-columns: 1fr 0.5fr;
   padding-top: 80px;
   padding-bottom: 80px; }
   @media (max-width: 1115px) {
