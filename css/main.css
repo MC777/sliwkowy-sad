@@ -309,7 +309,8 @@ template {
   display: none; }
 
 .attractions {
-  padding-top: 80px; }
+  padding-top: 80px;
+  text-align: left; }
   .attractions__title {
     font-size: 1.25rem;
     margin: 0;
@@ -322,6 +323,16 @@ template {
     text-align: center; }
     .attractions__description-first {
       padding-top: 60px; }
+  .attractions__table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 5%;
+    font-size: 1rem; }
+    .attractions__table tr {
+      vertical-align: top; }
+    .attractions__table th {
+      padding: 1rem; }
 
 .contact__title {
   font-size: 1.25rem;
@@ -457,6 +468,8 @@ template {
     text-align: center; }
   .price tr:hover {
     background-color: #5CA595; }
+  .price tr {
+    vertical-align: top; }
   .price th {
     padding-top: 12px;
     padding-bottom: 12px;
