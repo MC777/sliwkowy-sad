@@ -17,6 +17,10 @@
 		}
 	}
 	&__table {
+		@media (max-width: $mobile) {
+			height: auto;
+			width: auto;
+		}
 		border-collapse: collapse;
 		width: 100%;
 		margin: 0px auto;
