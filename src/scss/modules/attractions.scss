@@ -17,9 +17,12 @@
 		}
 	}
 	&__table {
-		@media (max-width: $mobile) {
-			height: auto;
-			width: auto;
+		@media (max-width: 600px) {
+			table, thead, tbody, th, td, tr { 
+				display: block; 
+				margin: 0px auto;
+				width: 90%;
+			}
 		}
 		border-collapse: collapse;
 		width: 100%;
