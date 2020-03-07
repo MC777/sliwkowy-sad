@@ -15,7 +15,17 @@
 		border-collapse: collapse;
 		width: 100%;
 		@media (max-width: $mobile) {
-			font-size: 1rem;
+			display: none;
+		}
+		&-mobile {
+			margin-top: 80px;
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			font-size: 1.25rem;
+			border-collapse: collapse;
+			width: 100%;
+			@media (min-width: $mobile) {
+				display: none;
+			}
 		}
 	}
 	& td,
@@ -27,7 +37,7 @@
 	& tr:hover {
 		background-color: $light-lochinvar;
 	}
-	& tr{
+	& tr {
 		vertical-align: top;
 	}
 	& th {
