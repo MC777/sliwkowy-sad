@@ -36,6 +36,15 @@ body {
 	background: rgba(10, 7, 14, 0.95);
 }
 
+.pictrue {
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+	padding: 0;
+	max-width: 100%;
+	max-height: 100%;
+}
+
 .main {
 	max-width: 1245px;
 	padding: 30px 16px 0 16px;
@@ -178,25 +187,12 @@ body {
 		}
 	}
 }
-.slides {
-	margin: 0;
-	padding-top: 80px;
-	overflow: hidden;
-	&__container img {
-		width: 20%;
-		height: 500px;
-	}
-	&__container {
-		position: relative;
-		width: 500%;
-		animation: slide 10s alternate;
-	}
-}
+
 .social {
 	width: 100%;
 	display: flex;
 	justify-content: left;
-	padding-top: 32px;	
+	padding-top: 32px;
 }
 .footer {
 	width: 100%;
@@ -216,13 +212,13 @@ body {
 		grid-template-columns: 1fr 1fr 1fr;
 		&-center {
 			@media (max-width: $mobile) {
-			padding-top: 16px;
+				padding-top: 16px;
 			}
 			white-space: nowrap;
 			&-text {
 				@media (max-width: $mobile) {
 					margin: 0px;
-					}
+				}
 				display: flex;
 				justify-content: center;
 				color: gray;
