@@ -329,6 +329,11 @@ template {
     margin: 0px auto;
     margin-top: 5%;
     font-size: 1rem; }
+    @media (max-width: 600px) {
+      .attractions__table table, .attractions__table thead, .attractions__table tbody, .attractions__table th, .attractions__table td, .attractions__table tr {
+        display: block;
+        margin: 0px auto;
+        width: 90%; } }
     .attractions__table tr {
       vertical-align: top; }
     .attractions__table th {
@@ -460,7 +465,16 @@ template {
     width: 100%; }
     @media (max-width: 1115px) {
       .price__table {
-        font-size: 1rem; } }
+        display: none; } }
+    .price__table-mobile {
+      margin-top: 80px;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-size: 1.25rem;
+      border-collapse: collapse;
+      width: 100%; }
+      @media (min-width: 1115px) {
+        .price__table-mobile {
+          display: none; } }
   .price td,
   .price th {
     border: 1px solid #ddd;
@@ -503,6 +517,19 @@ body {
   left: 0;
   width: 100%;
   background: rgba(10, 7, 14, 0.95); }
+
+.pictrue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px; }
+  @media (max-width: 500px) {
+    .pictrue {
+      margin-top: 140px;
+      zoom: 0.3; } }
 
 .main {
   max-width: 1245px;
@@ -665,19 +692,6 @@ body {
                 align-items: center;
         z-index: 3;
         height: 42px; } }
-
-.slides {
-  margin: 0;
-  padding-top: 80px;
-  overflow: hidden; }
-  .slides__container img {
-    width: 20%;
-    height: 500px; }
-  .slides__container {
-    position: relative;
-    width: 500%;
-    -webkit-animation: slide 10s alternate;
-            animation: slide 10s alternate; }
 
 .social {
   width: 100%;
