@@ -47,6 +47,10 @@
 			padding: 0.5rem;
 			margin: 0.5rem;
 			position: relative;
+			@media (max-width: $mobile) {
+				padding: 0;
+				margin: 0;
+			}
 		}
 	}
 }
