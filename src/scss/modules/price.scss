@@ -8,42 +8,36 @@
 		padding: 1rem 0;
 		border-bottom: 1px solid $lochinvar;
 	}
-	&__table {
-		margin-top: 80px;
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	&__text {
 		font-size: 1.25rem;
-		border-collapse: collapse;
-		width: 100%;
-		@media (max-width: $mobile) {
-			display: none;
-		}
-		&-mobile {
-			margin-top: 80px;
-			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-			font-size: 1.25rem;
-			border-collapse: collapse;
-			width: 100%;
-			@media (min-width: $mobile) {
-				display: none;
-			}
-		}
-	}
-	& td,
-	& th {
-		border: 1px solid #ddd;
-		padding: 8px;
 		text-align: center;
+		&-first {
+			padding-top: 60px;
+		}
 	}
-	& tr:hover {
-		background-color: $light-lochinvar;
+	&__btn {
+		text-align: center;
+		color: $lochinvar !important;
+		text-transform: uppercase;
+		background: #ffffff;
+		padding: 15px;
+		border: 2px solid $lochinvar !important;
+		border-radius: 6px;
+
+		display: block;
+		margin: 0 auto;
+		transition: all 0.3s ease 0s;
+		width: fit-content;
+		&-link {
+			text-decoration: none;
+			font-weight: bold;
+			color: $lochinvar;
+		}
 	}
-	& tr {
-		vertical-align: top;
-	}
-	& th {
-		padding-top: 12px;
-		padding-bottom: 12px;
-		background-color: $lochinvar;
-		color: white;
+	&__btn:hover {
+		color: $dark-purple !important;
+		border-radius: 50px;
+		border-color: $dark-purple !important;
+		transition: all 0.3s ease 0s;
 	}
 }
